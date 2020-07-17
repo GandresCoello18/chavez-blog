@@ -1,0 +1,39 @@
+body {
+  background-color: #eae7e7;
+}
+.titulos {
+  font-weight: 600;
+  color: #000;
+}
+.card-post .badge-card-post {
+  float: right !important;
+}
+.card-post .title-card-post {
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  line-height: 22px;
+}
+.card-post .descripcion-card-post {
+  color: #777272;
+}
+.carrusel-video .item-carrusel .item-caption {
+  background-color: #1b1a1a9d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+footer ul li a img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
