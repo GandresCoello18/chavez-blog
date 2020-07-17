@@ -7,7 +7,7 @@ const CardLarge = () => {
     <>
       <Card
         as="a"
-        href="#"
+        href="blog/articulo"
         style={{ textDecoration: "none", color: "#777272" }}
         className="mb-3"
       >

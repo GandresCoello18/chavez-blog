@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
+
+  const [host, setHost] = useState('');
+
+    useEffect( () => {
+      setHost(window.location.origin);
+    });
+
   return (
     <>
       <Container fluid as="footer" className="p-5 bg-dark">
@@ -18,7 +25,7 @@ const Footer = () => {
                   href="https://www.facebook.com/reynaldo.chavez.270900"
                   target="_black"
                 >
-                  <img src="img/facebook.svg" />
+                  <img src={`${host}/img/facebook.svg`} />
                 </a>
               </li>
               <li>
@@ -26,7 +33,7 @@ const Footer = () => {
                   href="https://www.instagram.com/iam_reynaldox/"
                   target="_black"
                 >
-                  <img src="img/instagram-sketched.svg" />
+                  <img src={`${host}/img/instagram-sketched.svg`} />
                 </a>
               </li>
             </ul>
@@ -35,7 +42,7 @@ const Footer = () => {
             <h2>Destacados</h2>
             <ul>
               <li>
-                <a>
+                <a href="blog/articulo" style={{textDecoration: 'none', color: '#fff'}}>
                   <Row>
                     <img
                       style={{ width: 60, height: 60 }}
@@ -48,7 +55,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a>
+                <a href="blog/articulo" style={{textDecoration: 'none', color: '#fff'}}>
                   <Row>
                     <img
                       style={{ width: 60, height: 60 }}
@@ -67,12 +74,12 @@ const Footer = () => {
             <ul>
               <li>
                 <a>
-                  <img src="img/pin.svg" /> Babahoyo - los rios - ecuador
+                  <img src={`${host}/img/pin.svg`} /> Babahoyo - los rios - ecuador
                 </a>
               </li>
               <li>
                 <a>
-                  <img src="img/gmail.svg" /> chavez@gmail.com
+                  <img src={`${host}/img/gmail.svg`} /> chavez@gmail.com
                 </a>
               </li>
             </ul>

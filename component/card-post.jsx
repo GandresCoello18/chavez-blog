@@ -7,7 +7,7 @@ const CardPost = () => {
     <>
       <Card
         as="a"
-        href="#"
+        href="blog/articulo"
         style={{ cursor: "pointer", textDecoration: "none" }}
         className="card-post"
       >
