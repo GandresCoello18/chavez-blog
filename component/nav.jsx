@@ -9,7 +9,7 @@ const MenuNav = ({ title }) => {
     <>
       <HeadPage title={title} />
       <Navbar collapseOnSelect expand="lg" >
-        <Navbar.Brand href="/">Reynaldo Chavez</Navbar.Brand>
+        <Navbar.Brand href="/">VISTA AL MUNDO</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
