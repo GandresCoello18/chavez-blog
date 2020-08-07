@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "titulo": "Nuevo coete fue lanzado al espacio",
-        "subtitulo": "SpaceX lo hace de nuevo",
+        "titulo": "SpaceX lo hace de nuevo",
+        "subtitulo": "MISIÓN ANASIS-II",
         "btn": "Leer más",
         "photo": "asrtonautas.jpg"
     },
     {
         "id": 2,
-        "titulo": "Se preparan ahora para llegar a martes",
-        "subtitulo": "SpaceX y la Nasa",
+        "titulo": "SpaceX y la Nasa",
+        "subtitulo": "CREW DRAGON REGRESA DE LA ESTACIÓN ESPACIAL",
         "btn": "Leer más",
         "photo": "vista-grande.jpg"
     },
     {
         "id": 3,
-        "titulo": "Realizan pruebas de motores para lanzamiento de mañana",
-        "subtitulo": "SpaceX",
+        "titulo": "SpaceX",
+        "subtitulo": "NASA SELECCIONA ESTRELLA OPTIMIZADA LUNAR",
         "btn": "Leer más",
         "photo": "pruebas.jpg"
     },
     {
         "id": 4,
-        "titulo": "Diseñan nabe para llegar a la orbita",
-        "subtitulo": "SpaceX se prepara",
-        "btn": "Leer más",
-        "photo": "nabe.jpg"
+        "titulo": "Poscast",
+        "subtitulo": "ENTREVISTA A LA PERSONA SOBRE LOS VIAJES ESPACIALES",
+        "btn": "Escuchar",
+        "photo": "entrevista.jpg"
     }
 ]

@@ -17,7 +17,7 @@ const Home = () => {
       <Header />
 
       <Container fluid>
-        <h2 className="p-3 titulos">Destacados</h2>
+        <h2 className="p-3 titulos" id="destacados">Destacados</h2>
         <Row className="justify-content-center">
           {json.map((item) => (
             <Col sm={12} className="mb-4" style={{ overflow: 'hidden' }}>
@@ -38,7 +38,7 @@ const Home = () => {
         <h2 className="p-2 titulos">Ultimas noticias</h2>
         <Row className="justify-content-center mb-4 p-2 bg-light">
           <Col sm={12} md={6} lg={9} className="mb-2 p-2">
-            {[0, 0, 0, 0].map((item) => (
+            {[0].map((item) => (
               <CardLarge />
             ))}
           </Col>

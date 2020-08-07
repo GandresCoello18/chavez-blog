@@ -6,8 +6,8 @@ const Header = () => {
             <div className='container-header'>
                 <article>
                     <h3>MISSION COMPLETE</h3>
-                    <h1>CREW DRAGON RETURNS FROM SPACE STATION</h1>
-                    <a href="blog/articulo" className='btn-simple-border'>Repetición</a>
+                    <h1>SPACEX</h1>
+                    <a href="#destacados" className='btn-simple-border'>Más Noticias</a>
                 </article>
             </div>
 
