@@ -8,7 +8,7 @@ const MenuNav = ({ title }) => {
   return (
     <>
       <HeadPage title={title} />
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" >
         <Navbar.Brand href="/">Reynaldo Chavez</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
