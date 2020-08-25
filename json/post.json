@@ -3,6 +3,7 @@
         "id": 1,
         "titulo": "SpaceX lo hace de nuevo",
         "subtitulo": "MISIÓN ANASIS-II",
+        "url": "mision-anasis-ll",
         "btn": "Leer más",
         "photo": "asrtonautas.jpg"
     },
@@ -10,6 +11,7 @@
         "id": 2,
         "titulo": "SpaceX y la Nasa",
         "subtitulo": "CREW DRAGON REGRESA DE LA ESTACIÓN ESPACIAL",
+        "url": "crew-dragron-regresa-a-la-estacion-espacial",
         "btn": "Leer más",
         "photo": "vista-grande.jpg"
     },
@@ -17,6 +19,7 @@
         "id": 3,
         "titulo": "SpaceX",
         "subtitulo": "NASA SELECCIONA ESTRELLA OPTIMIZADA LUNAR",
+        "url": "nasa-selecciona-estrella-optimizada-lunar",
         "btn": "Leer más",
         "photo": "pruebas.jpg"
     },
@@ -24,6 +27,7 @@
         "id": 4,
         "titulo": "Poscast",
         "subtitulo": "ENTREVISTA A LA PERSONA SOBRE LOS VIAJES ESPACIALES",
+        "url": "spacex-y-sus-misiones-espaciales",
         "btn": "Escuchar",
         "photo": "entrevista.jpg"
     }

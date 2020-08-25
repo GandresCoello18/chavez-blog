@@ -16,7 +16,8 @@
     "next": "^9.3.3",
     "react": "^16.13.0",
     "react-bootstrap": "^1.2.2",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-h5-audio-player": "^3.3.2"
   },
   "devDependencies": {
     "prettier": "^2.0.5",

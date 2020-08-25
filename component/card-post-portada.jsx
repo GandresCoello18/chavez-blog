@@ -1,13 +1,17 @@
 import React from 'react';
 
-const CardPostPortada = ({ titulo, subtitulo, btn, photo }) => {
+const CardPostPortada = ({ titulo, subtitulo, url, btn, photo }) => {
     return(
         <>
             <div className='container-header'>
                 <article>
                     <h3>{titulo}</h3>
                     <h1>{subtitulo}</h1>
-                    <a href="blog/articulo" className='btn-simple-border'>{btn}</a>
+                    {url === 'spacex-y-sus-misiones-espaciales' ? (
+                        <a href={`podcast/${url}`} className='btn-simple-border'>{btn}</a>
+                    ) : (
+                        <a href={`blog/${url}`} className='btn-simple-border'>{btn}</a>
+                    )}
                 </article>
             </div>
 

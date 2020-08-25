@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "../component/nav";
 import Footer from "../component/footer";
 import Header from "../component/header";
-import CardPost from "../component/card-post";
 import CardPostPortada from "../component/card-post-portada";
 import { Container, Row, Col } from "react-bootstrap";
 import CardLarge from "../component/card-notice-large";
@@ -13,7 +12,7 @@ import json from "../json/post.json";
 const Home = () => {
   return (
     <>
-      <Nav title="Reinaldo Chavez" />
+      <Nav title="Vista al mundo" />
       <Header />
 
       <Container fluid>
@@ -21,7 +20,7 @@ const Home = () => {
         <Row className="justify-content-center">
           {json.map((item) => (
             <Col sm={12} className="mb-4" style={{ overflow: 'hidden' }}>
-              <CardPostPortada titulo={item.titulo} subtitulo={item.subtitulo} btn={item.btn} photo={item.photo}  />
+              <CardPostPortada titulo={item.titulo} url={item.url} subtitulo={item.subtitulo} btn={item.btn} photo={item.photo}  />
             </Col>
           ))}
         </Row>

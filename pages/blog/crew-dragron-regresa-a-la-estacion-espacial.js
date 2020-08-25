@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import Footer from "../../component/footer";
+import { Interes } from '../../component/de-interes';
 import Nav from "../../component/nav";
 import CommentPost from "../../component/comment-post"
 import { Container, Row, Col, Breadcrumb, Badge, Image } from "react-bootstrap";
 
-const Articulo = () => {
+const CrewDragonArticle = () => {
 
     const [url, setUrl] = useState('');
 
@@ -15,17 +16,17 @@ const Articulo = () => {
 
     return(
         <>
-            <Nav title="Oferta del día: barra de sonido Samsung hoy por 109 euros | Reinaldo Chavez" />
+            <Nav title="Crew dragon regresa de la estacion espacial |  Vista al mundo" />
             <Container className="p-5 bg-light">
                 <Row className="justify-content-center">
                     <Col sm={12} lg={8}>
                         <Breadcrumb>
                             <Breadcrumb.Item href="/">Inicio</Breadcrumb.Item>
                             <Breadcrumb.Item href="/articulos">Articulos</Breadcrumb.Item>
-                            <Breadcrumb.Item active>Oferta del día...</Breadcrumb.Item>
+                            <Breadcrumb.Item active>Crew Dragon regresa...</Breadcrumb.Item>
                         </Breadcrumb>
 
-                        <h2 className="titulos">Oferta del día: barra de sonido Samsung hoy por 109 euros</h2>
+                        <h2 className="titulos">Crew dragon regresa de la estacion espacial.</h2>
                         <p className="p-1">{moment(new Date()).format('LL, LTS')}</p>
                         <Row className="justify-content-center">
                             <Col as="a" href={`https://www.facebook.com/sharer/sharer.php?u=${url}`} target="_blank" className="ml-3" xs={1}>
@@ -43,51 +44,67 @@ const Articulo = () => {
                         </Row>
                         <Row className="justify-content-center mt-4">
                             <Col xs="12">
-                                <Image src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/Uso-salon-Samsung-HW-N300-800x419.jpg" fluid />
+                                <Image src="../img/blog/crew-dragon.jpg" fluid />
                             </Col>
                             <Col xs="12" className="p-2" style={{fontSize: 16, letterSpacing: -0.23, lineHeight: 1.7}}>
                                 <p className="p-1">
-                                    El modelo del que hablamos es de los que sólo incluye un elemento, por lo que no tiene subwoofer. Esto, entre otras cosas, hace que la compatibilidad en lo referente al
-                                    sonido sea 2.0, lo que no evita que se consiga una más que adecuada localización ya que en el interior de la Samsung HW-N300 existen cuatro altavoces.
-                                    Por cierto, las dimensiones no son especialmente grandes en este accesorio, ya que sólo ocupa lo siguiente: 641 x 65 x 107 milímetros. Por lo tanto, cabe en casi cualquier hueco del salón.
+                                    La cápsula Crew Dragon de SpaceX abandonó este sábado la Estación Espacial Internacional para emprender su regreso a la Tierra con dos astronautas estadounidenses a bordo, según un vídeo de la NASA.
                                 </p>
                                 <p className="p-1">
-                                    La conectividad que ofrece esta barra de sonido es bastante buena, ya que incluye opciones físicas como por ejemplo la tradicional denominada Auxiliar y, además, tampoco le falta la posibilidad
-                                    de dar uso a un puerto Óptico que es muy habitual en las Smart TV y que ofrece una alta calidad de sonido. Aparte de todos esto el accesorio del que hablamos incluye Bluetooth, lo que evita utilizar
-                                    cables para sincronizarse con los televisores que soporten esta opción y, también, con los smartphones. Un detalle adicional: existe un puerto USB que permite el uso tanto de pendrives como de <b>discos de almacenamiento externo</b>.
+                                    "Separación confirmada. Dragon encendió cuatro propulsores de salida para alejarse de la @Space_Station", tuiteó SpaceX después de que la cápsula se desacoplara aparentemente sin problemas de la ISS.
                                 </p>
-
-                                <h2 className="titulos">Control de esta barra de sonido y su oferta</h2>
-                                <p className="p-1">
-                                    Aparte de incluir un mando a distancia que ofrece una comodidad innegable a la hora de gestionar las reproducciones, la Samsung HW-N300 incluye un pequeño panel táctil que incluye todo lo necesario para que sea posible realizar cualquier
-                                    acción de forma muy cómoda. Interesante también son los LEDs frontales (concretamente cuatro), que permiten conocer desde la entrada de sonido que se utiliza hasta los diferentes modos preconfigurados que existen en la barra de sonido.
+                                <p className='p-1'>
+                                    La partida se realizó a las 18:34, dos meses después de la llegada de los dos hombres a bordo de la cápsula creada por la compañía del excéntrico empresario Elon Musk, precisó la agencia espacial estadounidense.
+                                </p>
+                                <p>
+                                    Unas horas antes, ambos astronautas se habían despedido de los tres colegas que dejaron en la ISS aunque había aún cierta incertidumbre respecto a su viaje teniendo en cuenta las condiciones meteorológicas en Florida.
                                 </p>
 
-                                <Image src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/Controles-Samsung-HW-N300-1024x594.jpg" fluid />
-                                <p className="p-1">
-                                    La oferta que existe en estos momentos para hacerse con este accesorio es bastante interesante, ya que permite aprovechar un descuento del 15%, por lo que es una buena oportunidad por una barra de sonido compatible con Dolby. Este modelo,
-                                    que es compatible con una aplicación para iOS y Android que permite utilizar los teléfonos como si de un mando a distancia se tratase, es posible conseguir ahora mismo en el siguiente enlace de Amazon:
+                                <iframe style={{ width: '100%', height: 500 }} src="https://www.youtube.com/embed/sl2jo1bSxl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                <h2 className="titulos">Plan de cronograma de la fase de regreso - Horario del este de Estados Unidos</h2>
+                                <p className="p-2">
+                                    <strong>Viernes 31 de julio</strong>
+                                    <br/>
+                                    10.45 AM- Conferencia desde la Estación Espacial Internacional con los astronautas Bob Behnken, Doug Hurley and Chris Cassidy.
+                                </p>
+
+                                <p className="p-2">
+                                    <strong>Sábado 1 de agosto</strong>
+                                    <br/>
+                                    9.10 AM- Ceremonia de despedida del Demo-2 en la Estación Espacial Internacional
+                                    5.15 PM- Proceso de desacoplamiento. La cobertura de NASA TV comienza a las 7.34 PM
+                                </p>
+
+                                <p className='p-2'>
+                                    <strong>Domingo 2 de agosto</strong>
+                                    <br/>
+                                    2.42 PM – Amerizaje
+                                    5 PM – Conferencia de prensa post-amerizaje con representantes de NASA y SpaceX
+                                </p>
+
+                                <p className='p-2'>
+                                    <strong>Martes 4 de agosto</strong>
+                                    <br/>
+                                    4.30- Conferencia de prensa en el Centro Espacial Lyndon B. Johnson con los astronautas Bob Benhken y Doug Hurley.
+                                </p>
+
+                                <p className='text-center'>
+                                    <Image src="../img/blog/2-crew-dragon.jpg" fluid />
+                                </p>
+
+                                <p className='p-1'>
+                                    "Lo más difícil fue ponernos en órbita, pero lo más importante es regresar a casa", dijo Behnken unas horas antes de la partida.
+                                </p>
+
+                                <p className='p-1'>
+                                    La operación es delicada, aun si el año pasado la cápsula Dragon cumplió esta misión sin problemas. El regreso atmosférico probará la resistencia del escudo térmico. Luego, grandes paracaídas ralentizarán el descenso hacia el océano.
                                 </p>
                             </Col>
                         </Row>
                     </Col>
                     <Col sm={12} lg={4}>
-                        <hr/>
-                        <h2 className="titulos mb-4">Te puede interesar</h2>
-                        {[0,0,0].map(item => (
-                            <div className="card mb-3">
-                                <div className="row no-gutters">
-                                    <div className="col-md-4">
-                                        <img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/dron-4k-800x420.jpg" className="card-img rounded" alt="..." />
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="card-body">
-                                            <p className="card-text">This is a wider card with supporting text below as a natural.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                        <Interes />
                     </Col>
                 </Row>
                 <Row className="p-1">
@@ -122,4 +139,4 @@ const Articulo = () => {
     );
 }
 
-export default Articulo;
+export default CrewDragonArticle;

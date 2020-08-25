@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import Footer from "../../component/footer";
 import Nav from "../../component/nav";
+import { Interes } from '../../component/de-interes';
 import CommentPost from "../../component/comment-post"
 import { Container, Row, Col, Breadcrumb, Badge, Image } from "react-bootstrap";
 
@@ -15,17 +16,17 @@ const Articulo = () => {
 
     return(
         <>
-            <Nav title="Oferta del día: barra de sonido Samsung hoy por 109 euros | Reinaldo Chavez" />
+            <Nav title="NASA SELECCIONA ESTRELLA OPTIMIZADA LUNAR | Vista al mundo" />
             <Container className="p-5 bg-light">
                 <Row className="justify-content-center">
                     <Col sm={12} lg={8}>
                         <Breadcrumb>
                             <Breadcrumb.Item href="/">Inicio</Breadcrumb.Item>
                             <Breadcrumb.Item href="/articulos">Articulos</Breadcrumb.Item>
-                            <Breadcrumb.Item active>Oferta del día...</Breadcrumb.Item>
+                            <Breadcrumb.Item active>NASA SELECCIONA...</Breadcrumb.Item>
                         </Breadcrumb>
 
-                        <h2 className="titulos">Oferta del día: barra de sonido Samsung hoy por 109 euros</h2>
+                        <h2 className="titulos">NASA SELECCIONA ESTRELLA OPTIMIZADA LUNAR</h2>
                         <p className="p-1">{moment(new Date()).format('LL, LTS')}</p>
                         <Row className="justify-content-center">
                             <Col as="a" href={`https://www.facebook.com/sharer/sharer.php?u=${url}`} target="_blank" className="ml-3" xs={1}>
@@ -43,51 +44,32 @@ const Articulo = () => {
                         </Row>
                         <Row className="justify-content-center mt-4">
                             <Col xs="12">
-                                <Image src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/Uso-salon-Samsung-HW-N300-800x419.jpg" fluid />
+                                <Image src="../img/blog/3-image.jpg" fluid />
                             </Col>
                             <Col xs="12" className="p-2" style={{fontSize: 16, letterSpacing: -0.23, lineHeight: 1.7}}>
                                 <p className="p-1">
-                                    El modelo del que hablamos es de los que sólo incluye un elemento, por lo que no tiene subwoofer. Esto, entre otras cosas, hace que la compatibilidad en lo referente al
-                                    sonido sea 2.0, lo que no evita que se consiga una más que adecuada localización ya que en el interior de la Samsung HW-N300 existen cuatro altavoces.
-                                    Por cierto, las dimensiones no son especialmente grandes en este accesorio, ya que sólo ocupa lo siguiente: 641 x 65 x 107 milímetros. Por lo tanto, cabe en casi cualquier hueco del salón.
-                                </p>
-                                <p className="p-1">
-                                    La conectividad que ofrece esta barra de sonido es bastante buena, ya que incluye opciones físicas como por ejemplo la tradicional denominada Auxiliar y, además, tampoco le falta la posibilidad
-                                    de dar uso a un puerto Óptico que es muy habitual en las Smart TV y que ofrece una alta calidad de sonido. Aparte de todos esto el accesorio del que hablamos incluye Bluetooth, lo que evita utilizar
-                                    cables para sincronizarse con los televisores que soporten esta opción y, también, con los smartphones. Un detalle adicional: existe un puerto USB que permite el uso tanto de pendrives como de <b>discos de almacenamiento externo</b>.
+                                    La NASA seleccionó a SpaceX para desarrollar una nave espacial optimizada para la luna para transportar a la tripulación entre la órbita lunar y la superficie de la Luna como parte del programa Artemis de la NASA.
                                 </p>
 
-                                <h2 className="titulos">Control de esta barra de sonido y su oferta</h2>
-                                <p className="p-1">
-                                    Aparte de incluir un mando a distancia que ofrece una comodidad innegable a la hora de gestionar las reproducciones, la Samsung HW-N300 incluye un pequeño panel táctil que incluye todo lo necesario para que sea posible realizar cualquier
-                                    acción de forma muy cómoda. Interesante también son los LEDs frontales (concretamente cuatro), que permiten conocer desde la entrada de sonido que se utiliza hasta los diferentes modos preconfigurados que existen en la barra de sonido.
-                                </p>
+                                <Row className='justify-content-center'>
+                                    <Col xs={12} md={6}>
+                                        <p className="p-1">
+                                            Una nave espacial optimizada para la Luna puede volar muchas veces entre la superficie de la Luna y la órbita lunar sin aletas ni protección térmica necesaria para el regreso de la Tierra. Con un gran volumen habitable y de almacenamiento, Starship es capaz de entregar cantidades significativas de carga para investigación y respaldar operaciones sólidas en la superficie lunar para permitir una base lunar sostenible.
+                                        </p>
+                                    </Col>
+                                    <Col xs={12} md={6}>
+                                        <Image src="../img/blog/img-peque.jpg" fluid />
+                                    </Col>
+                                </Row>
 
-                                <Image src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/Controles-Samsung-HW-N300-1024x594.jpg" fluid />
                                 <p className="p-1">
-                                    La oferta que existe en estos momentos para hacerse con este accesorio es bastante interesante, ya que permite aprovechar un descuento del 15%, por lo que es una buena oportunidad por una barra de sonido compatible con Dolby. Este modelo,
-                                    que es compatible con una aplicación para iOS y Android que permite utilizar los teléfonos como si de un mando a distancia se tratase, es posible conseguir ahora mismo en el siguiente enlace de Amazon:
+                                    El año pasado, la NASA anunció que Starship era elegible para la iniciativa Commercial Lunar Payload Services (CLPS), para entregar cargas útiles entre la Tierra y la Luna y permitir que los humanos regresen a la Luna.
                                 </p>
                             </Col>
                         </Row>
                     </Col>
                     <Col sm={12} lg={4}>
-                        <hr/>
-                        <h2 className="titulos mb-4">Te puede interesar</h2>
-                        {[0,0,0].map(item => (
-                            <div className="card mb-3">
-                                <div className="row no-gutters">
-                                    <div className="col-md-4">
-                                        <img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/07/dron-4k-800x420.jpg" className="card-img rounded" alt="..." />
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="card-body">
-                                            <p className="card-text">This is a wider card with supporting text below as a natural.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                        <Interes />
                     </Col>
                 </Row>
                 <Row className="p-1">
